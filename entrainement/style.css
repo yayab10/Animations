@@ -1,0 +1,31 @@
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+  }
+  @keyframes myAnimation {
+    0% {
+      transform: scale(1);
+      background-color: blue;
+    }
+    50% {
+      transform: scale(1.2);
+      background-color: red;
+      width: 500px;
+    }
+    100% {
+      transform: scale(1);
+      background-color: blue;
+      height: 500px;
+    }
+  }
+.animated-element {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  animation: myAnimation 3s ease infinite;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+    
